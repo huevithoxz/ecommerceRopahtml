@@ -1,26 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa</title>
-    <link rel="stylesheet" href="css/headerStyle.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <title>BlueStore | Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" >
 
-      <div class='header'>
-        <a href="index.html">  <img class='logo-container'  src="css/img/corona.jpg"></a>
-        <div class='options'>
-          <a class="option" href="shop.html">
-            SHOP
-        </a>
-          <a class='option' href="contact.html">
-            CONTACT
-          </a>
-         
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/cropped-logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems" >
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Acerca</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Cuenta</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()" >
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Dale a tu ropa <br>Un Nuevo Estilo! </h1>
+                    <p>Hoy en dia es super importante tener muchas variedades de estilo y poder ir
+                        variando cada dia para verse distinto !
+                    </p>
+                    <a href="" class="btn"> Enterate ahora &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/men.png">
+                </div>
+            </div>
         </div>
-     
-   </div> 
+    </div>
+
+<!--categorias-->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/hats.png" >
+            </div>
+            <div class="col-3">
+                <img src="images/jackets.png" >
+            </div>
+            <div class="col-3">
+                <img src="images/sneakers.png" >
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--productos mas vistos-->
+    <div class="small-container">
+        <h2 class="title">Productos destacados</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/black-shearling.png" >
+                <h4>Nike air</h4>
+                <div class="rating">
+                </div>
+                <p>$190.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/yeezy.png" >
+                <h4>Adidas Yeezy</h4>
+                <div class="rating">
+                </div>
+                <p>$199.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/blue-jean-jacket.png" >
+                <h4>Chacketa blue-jean</h4>
+                <div class="rating">
+                </div>
+                <p>$39.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/nike-funky.png" >
+                <h4>Air Jordan Limited</h4>
+                <div class="rating">
+                </div>
+                <p>$239.990</p>
+            </div>
+        </div>
+      
+    </div>
+    <h2 class="title">Ultimos productos </h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/black-converse.png" >
+                <h4>black-converse</h4>
+                <div class="rating">
+                </div>
+                <p>$19.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/palm-tree-cap.png" >
+                <h4>Gorro palmera</h4>
+                <div class="rating">
+                </div>
+                <p>$19.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/wolf-cap.png" >
+                <h4>Wolf cap</h4>
+                <div class="rating">
+                </div>
+                <p>$19.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/red-beanie.png" >
+                <h4>Gorro rojo/h4>
+                <div class="rating">
+                </div>
+                <p>$2.990</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/timberlands.png" >
+                <h4>Bototo</h4>
+                <div class="rating">
+                </div>
+                <p>$40.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/yeezy.png" >
+                <h4>Adidas Yeezy</h4>
+                <div class="rating">
+                </div>
+                <p>$199.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/blue-jean-jacket.png" >
+                <h4>Chacketa blue-jean</h4>
+                <div class="rating">
+                </div>
+                <p>$39.990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/nike-funky.png" >
+                <h4>Air Jordan Limited</h4>
+                <div class="rating">
+                </div>
+                <p>$239.990</p>
+            </div>
+        </div>
+      <!--Ofertas-->
+      <div class="offer">
+          <div class="small-container">
+              <div class="row">
+                  <div class="col-2">
+                    <video controls = "true" poster="images/W_02_07-FreshWise_01_galaxywatch4_black_galaxywatch4classic_black_H-scaled.jpg" src="images/y2mate.com - Galaxy Watch4 Series Unveiling  Samsung_1080p.mp4" width="390" height="300"></video>
+                  </div>
+                  <div class="col-2">
+                      <p>Disponible exclusivamente en BlueStore</p>
+                      <h1>Samsung Galaxy Watch 4 Classic</h1>
+                      <small>La mayoría de nosotros queremos conocernos más, para poder ser la mejor versión de nosotros mismos. Por eso diseñamos el nuevo Galaxy Watch4 Classic para que sea el compañero de tu viaje hacia una vida más saludable. </small>
+                     <a class="btn" href=""> Comprar Ahora &#8594; </a>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <!--marcas -->
+
+      <div class="brands">
+          <div class="small-container">
+          <div class="row">
+              <div class="col-5">
+                  <img src="images/1200px-Adidas_Logo.svg.png" >
+              </div>
+              <div class="col-5">
+                <img src="images/nike.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/Puma-Logo.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/webpay-logo-1.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/logo-Samsung.png" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col-1"><h3>Descarga nuestra App</h3>
+                <p>Descarga la aplicacion para Android y Ios</p>
+                <div class="app-logo">
+                    <img src="images/images.png">
+                    <img src="images/images (1).png">
+                </div>
+            </div>
+                  <div class="footer-col-2"> 
+                      <img src="images/cropped-logo.png" >
+                      <p>Nuestro proposito es lograr llegar a darle un estilo unico a cada persona 
+                          al rededor del mundo.
+                      </p>
+                  </div>
+                  <div class="footer-col-3"> 
+                    <h3>Puede interesarte</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Blog</li>
+                        <li>Terminos de devolucion</li>
+                        <li>Unete a nosotros</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4"> 
+                    <h3>Siguenos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twiter</li>
+                        <li>web</li>
+                    </ul>
+                </div>
+              </div>
+              <hr>
+              <p class="copyrigth">Copyright 2021- Huevithox</p>
+          </div>
+      </div>
+      <script src="toggleMenu.js"></script>
 </body>
+
 </html>
